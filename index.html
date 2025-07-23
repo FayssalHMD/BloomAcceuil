@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloom - Douce au naturelle</title>
+    <link rel="icon" type="image/png" href="/images/title-icon.png">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body class="no-scroll">
+
+    <div class="loader-wrapper">
+        <img src="/images/flower_loading.png" alt="Loading..." class="loader-flower">
+    </div>
+    
+     <header class="header-section" id="header">
+        <nav class="navigation-bar" aria-label="Main Navigation">
+            <a href="/" class="nav-logo-link">
+                <img src="/images/bloom-logo.png" alt="Bloom Home" class="navigation-logo">
+            </a>
+
+            <ul class="nav-menu desktop-only">
+                <li><a href="/" class="nav-link">Accueil</a></li>
+                <li><a href="#nos-produits" class="nav-link">Produits</a></li>
+                <li><a href="/resultats" class="nav-link">Nos Résultats</a></li>
+                <li><a href="/contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                 <button id="theme-toggle-btn" class="nav-icon-btn" aria-label="Toggle theme">
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zM2 13h2c.55 0 1-.45 1-1s-.45-1-1-1H2c-.55 0-1 .45-1 1s.45 1 1 1zm18 0h2c.55 0 1-.45 1-1s-.45-1-1-1h-2c-.55 0-1 .45-1 1s.45 1 1 1zm-9-8c.55 0 1-.45 1-1V2c0-.55-.45-1-1-1s-1 .45-1 1v2c0 .55.45 1 1 1zm0 16c.55 0 1-.45 1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1v2c0 .55.45 1 1 1zM5.64 6.36c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L5.64 3.54c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41l1.41 1.41zm12.72 12.72c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41l-1.41-1.41c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41l1.41 1.41zM5.64 17.64c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0l1.41-1.41c.39-.39.39-1.02 0-1.41-.39-.39-1.02-.39-1.41 0l-1.41 1.41zm12.72-12.72c-.39-.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0l1.41-1.41c.39-.39.39-1.02 0-1.41-.39-.39-1.02-.39-1.41 0l-1.41 1.41z"></path></svg>
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M9.37 5.51C9.19 6.15 9.1 6.82 9.1 7.5c0 4.08 3.32 7.4 7.4 7.4.68 0 1.35-.09 1.99-.27C17.45 17.19 14.93 19 12 19c-3.86 0-7-3.14-7-7 0-2.93 1.81-5.45 4.37-6.49z"></path></svg>
+                </button>
+                <a href="/compte" class="nav-icon-btn user-account-icon" aria-label="User Account">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"></path></svg>
+                </a>
+                <a href="/panier" class="nav-icon-btn cart-icon" aria-label="Shopping Bag">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M18 6h-2c0-2.21-1.79-4-4-4S8 3.79 8 6H6c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-6-2c1.1 0 2 .9 2 2h-4c0-1.1.9-2 2-2zm6 16H6V8h2v2c0 .55.45 1 1 1s1-.45 1-1V8h4v2c0 .55.45 1 1 1s1-.45 1-1V8h2v12z"></path></svg>
+                </a>
+            </div>
+
+            <button class="hamburger-menu" id="hamburger" aria-label="Toggle Navigation Menu" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </nav>
+
+        <div class="mobile-nav" id="mobile-menu">
+            <div class="mobile-nav-top">
+                <ul class="mobile-nav-list">
+                    <li><a href="/" class="mobile-nav-link">Accueil</a></li>
+                    <li><a href="#nos-produits" class="mobile-nav-link">Produits</a></li>
+                    <li><a href="/resultats" class="mobile-nav-link">Nos Résultats</a></li>
+                    <li><a href="/contact" class="mobile-nav-link">Contact</a></li>
+                </ul>
+                <hr class="mobile-nav-divider">
+                <ul class="mobile-nav-list">
+                     <li>
+                        <a href="/compte" class="mobile-nav-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"></path></svg>
+                            Mon Compte
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/panier" class="mobile-nav-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M18 6h-2c0-2.21-1.79-4-4-4S8 3.79 8 6H6c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-6-2c1.1 0 2 .9 2 2h-4c0-1.1.9-2 2-2zm6 16H6V8h2v2c0 .55.45 1 1 1s1-.45 1-1V8h4v2c0 .55.45 1 1 1s1-.45 1-1V8h2v12z"></path></svg>
+                            Panier
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="mobile-nav-bottom">
+                <div class="mobile-theme-switcher">
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zM2 13h2c.55 0 1-.45 1-1s-.45-1-1-1H2c-.55 0-1 .45-1 1s.45 1 1 1zm18 0h2c.55 0 1-.45 1-1s-.45-1-1-1h-2c-.55 0-1 .45-1 1s.45 1 1 1zm-9-8c.55 0 1-.45 1-1V2c0-.55-.45-1-1-1s-1 .45-1 1v2c0 .55.45 1 1 1zm0 16c.55 0 1-.45 1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1v2c0 .55.45 1 1 1zM5.64 6.36c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L5.64 3.54c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41l1.41 1.41zm12.72 12.72c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41l-1.41-1.41c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41l1.41 1.41zM5.64 17.64c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0l1.41-1.41c.39-.39.39-1.02 0-1.41-.39-.39-1.02-.39-1.41 0l-1.41 1.41zm12.72-12.72c-.39-.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0l1.41-1.41c.39-.39.39-1.02 0-1.41-.39-.39-1.02-.39-1.41 0l-1.41 1.41z"></path></svg>
+                    <input type="checkbox" id="mobile-theme-toggle" class="theme-switch-checkbox">
+                    <label for="mobile-theme-toggle" class="theme-switch-label">
+                        <span class="theme-switch-thumb"></span>
+                    </label>
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M9.37 5.51C9.19 6.15 9.1 6.82 9.1 7.5c0 4.08 3.32 7.4 7.4 7.4.68 0 1.35-.09 1.99-.27C17.45 17.19 14.93 19 12 19c-3.86 0-7-3.14-7-7 0-2.93 1.81-5.45 4.37-6.49z"></path></svg>
+                </div>
+            </div>
+        </div>
+     </header>
+
+     <div class="nav-overlay" id="nav-overlay"></div>
+
+     <main>
+        <section class="hero-section" id="hero-section" role="img" aria-label="Flacon d'huile Bloom posé devant un vase de fleurs">
+            <div class="hero-content">
+                <h1 class="hero-title">Douce au Naturelle.</h1>
+                <p class="hero-text">Découvrez le pouvoir doux de la nature. Notre huile exclusive nourrit votre peau, la laissant douce, radieuse et magnifiquement nette.</p>
+                <a href="#nos-produits" class="btn-hero">Découvrir nos produits</a>
+            </div>
+        </section>
+
+        <section class="brand-promise" id="brand-promise">
+            <div class="promise-container">
+                <div class="promise-text-panel">
+                    <h2 class="promise-headline">
+                        <span>Pureté.</span>
+                        <span>Simplicité.</span>
+                        <span>Efficacité.</span>
+                    </h2>
+                    <p class="promise-paragraph">
+                        Au cœur de Bloom se trouve une promesse simple : exploiter la puissance des ingrédients les plus purs pour des résultats visibles. Chaque goutte est une célébration de la nature, conçue pour votre peau.
+                    </p>
+                </div>
+                <div class="promise-visual">
+                    <img src="/images/presentation-image.png" 
+                         alt="A soft-focus macro shot of a natural ingredient texture">
+                </div>
+            </div>
+        </section>
+        
+        <section class="three-promises">
+            <h2 class="three-promises-title">Nos Promesses</h2>
+            <div class="promise-block">
+                <div class="promise-block-image">
+                    <img src="/images/promise01-image.png" alt="Pure and effective ingredient texture">
+                </div>
+                <div class="promise-block-text">
+                    <span class="promise-number">01</span>
+                    <h3>Ingrédients d'Exception</h3>
+                    <p>Nous sélectionnons uniquement des ingrédients naturels, reconnus pour leur pureté et leur efficacité. Sans compromis.</p>
+                </div>
+            </div>
+            <div class="promise-block layout-reversed">
+                <div class="promise-block-image">
+                    <img src="/images/promise02-image.png" alt="Visible results on skin texture">
+                </div>
+                <div class="promise-block-text">
+                    <span class="promise-number">02</span>
+                    <h3>Résultats Visibles</h3>
+                    <p>Nos formules sont conçues pour offrir des résultats que vous pouvez voir et sentir. Une peau visiblement plus saine et plus douce.</p>
+                </div>
+            </div>
+            <div class="promise-block">
+                <div class="promise-block-image">
+                    <img src="/images/promise03-image.png" alt="Gentle and caring formula texture">
+                </div>
+                <div class="promise-block-text">
+                    <span class="promise-number">03</span>
+                    <h3>Formules Douces</h3>
+                    <p>La douceur est notre priorité. Nos produits respectent l'équilibre naturel de votre peau et conviennent même aux peaux les plus sensibles.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="product-showcase-section" id="nos-produits">
+            <div class="showcase-container">
+                <h2 class="showcase-title">Nos Incontournables</h2>
+                <div class="product-grid" id="product-grid">
+
+                    <article class="product-card">
+                        <div class="product-image-wrapper">
+                            <img src="/images/produit1.jpg" alt="Radiant Glow Oil Product Image" class="product-image">
+                        </div>
+                        <div class="product-card-content">
+                            <h3>Huile Éclat Radieux</h3>
+                            <p class="product-description">Une huile soyeuse et vite absorbée pour un teint visiblement lumineux.</p>
+                            <span class="product-price">82,00€</span>
+                            <a href="/produit/huile-eclat-radieux" class="product-btn">Voir les détails</a>
+                        </div>
+                    </article>
+        
+                    <article class="product-card">
+                        <div class="product-image-wrapper">
+                             <img src="/images/produit2.jpg" alt="Hydrating Petal Mist Product Image" class="product-image">
+                        </div>
+                        <div class="product-card-content">
+                            <h3>Brume Pétale Hydratante</h3>
+                            <p class="product-description">Une brume ultra-fine pour rafraîchir et apaiser les peaux déshydratées.</p>
+                            <span class="product-price">45,00€</span>
+                            <a href="/produit/brume-petale-hydratante" class="product-btn">Voir les détails</a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials-section">
+            <h2 class="showcase-title">Ce qu'en disent nos clientes.</h2>
+    
+            <div class="perspective-carousel">
+                <button class="carousel-nav prev-btn" aria-label="Témoignage précédent">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                      <polyline points="15 6 9 12 15 18" />
+                    </svg>
+                </button>
+                
+                <div class="carousel-cards">
+                    <div class="testimonial-card">
+                        <div class="stars" aria-label="5 sur 5 étoiles">
+                            <svg fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            <svg fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            <svg fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            <svg fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            <svg fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                        </div>
+                        <p class="testimonial-text">"J'ai la peau très sensible et l'huile Bloom est la seule chose qui a calmé mes rougeurs. Ma peau est tellement plus douce et lumineuse. C'est magique !"</p>
+                        <footer class="customer-name">- Inès B.</footer>
+                    </div>
+    
+                    <div class="testimonial-card">
+                        <div class="stars" aria-label="5 sur 5 étoiles">
+                            <svg fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            <svg fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            <svg fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            <svg fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            <svg fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                        </div>
+                        <p class="testimonial-text">"Absolument conquise ! L'odeur est subtile et agréable, et la texture pénètre rapidement sans laisser de film gras. Je recommande à 100%."</p>
+                        <footer class="customer-name">- Sarah L.</footer>
+                    </div>
+    
+                    <div class="testimonial-card">
+                        <div class="stars" aria-label="4 sur 5 étoiles">
+                            <svg fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            <svg fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            <svg fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            <svg fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                        </div>
+                        <p class="testimonial-text">"Très bon produit, j'ai vu une différence sur mes cicatrices d'acné après quelques semaines. La livraison a été rapide. Le flacon est aussi très joli."</p>
+                        <footer class="customer-name">- Fatima Z.</footer>
+                    </div>
+    
+                    <div class="testimonial-card">
+                        <div class="stars" aria-label="5 sur 5 étoiles">
+                            <svg fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            <svg fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            <svg fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            <svg fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            <svg fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                        </div>
+                        <p class="testimonial-text">"Ce produit est devenu un indispensable dans ma routine du soir. Il hydrate parfaitement ma peau mixte sans la graisser. Un vrai coup de cœur."</p>
+                        <footer class="customer-name">- Amira K.</footer>
+                    </div>
+                </div>
+                
+                <button class="carousel-nav next-btn" aria-label="Témoignage suivant">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                      <polyline points="9 6 15 12 9 18" />
+                    </svg>
+                </button>
+            </div>
+        </section>
+
+        <section class="final-invitation-section">
+            <div class="invitation-card">
+                <img src="/images/CTA-image.png" alt="Texture de sérum Bloom sur la peau" class="invitation-image">
+                <h2 class="invitation-headline">Prête à révéler votre éclat ?</h2>
+                <p class="invitation-text">Votre voyage vers une peau lumineuse commence ici.</p>
+                <a href="#nos-produits" class="invitation-btn">Explorer la Collection</a>
+            </div>
+        </section>
+        
+     </main>
+
+     <footer class="site-footer">
+        <hr class="footer-separator">
+        <div class="footer-content">
+            <a href="/" class="footer-logo">
+                <img src="/images/bloom-logo.png" alt="Bloom Logo" class="footer-logo-img">
+            </a>
+            <ul class="footer-socials">
+                <li>
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z" /></svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                        <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5z" /></svg>
+                    </a>
+                </li>
+            </ul>
+            <p class="footer-copyright">© 2025 Bloom. Tous droits réservés.</p>
+        </div>
+     </footer>
+     
+     <script src="functions/script.js"></script>
+</body>
+</html>
